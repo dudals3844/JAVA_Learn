@@ -9,19 +9,20 @@ public class Main {
     /**
      * @param args
      */
-    public static String[] getMembers(){
-        String[] members = {"choi", "young", "min"};
-        return members;
-    }
-    
+   
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        String[] members = getMembers();
-        for(int i =0 ; i < members.length; i++){
-            System.out.print(members[i]);
+        String[] temp = {"aa","bb","cc"};
+        for(int i = 0; i < temp.length; i++){
+            System.out.println(temp[i]);
         }
         
+        System.out.println("--------SAME SYNTAX---------");
+        
+        for(String el : temp){
+            System.out.println(el);//배열 하나를 출력하고 다시 FOR문으로 반복한다.
+        }
         
     }
 
