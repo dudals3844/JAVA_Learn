@@ -8,9 +8,9 @@ public class Main {
     /**
      * @param args
      */
-    public static void numbering(){
+    public static void numbering(int limit){
         int i = 0;
-        while(i < 10){
+        while(i < limit){
             System.out.println(i);
             i++;
         }
@@ -19,7 +19,9 @@ public class Main {
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        numbering();
+        //numbering();
+        numbering(5);
+        
         
         
     }
