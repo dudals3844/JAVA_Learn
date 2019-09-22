@@ -37,15 +37,15 @@ public class Main{
         // TODO Auto-generated method stub
         
         Calculater c1 = new Calculater();
-        c1.setOprands(10,20);
-        c1.avg();
-        c1.sum();
-
-
+        System.out.println(c1.PI);//인스턴스를 이용해 PI 접근
+        
         Calculater c2 = new Calculater();
-        c2.setOprands(20,40);
-        c2.avg();
-        c2.sum();
+        System.out.println(c2.PI);
+        
+        
+        System.out.println(Calculater.PI);//클래스를 통해서 PI 접근
+        
+        
         
         
        
