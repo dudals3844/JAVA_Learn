@@ -37,14 +37,19 @@ public class Main{
         // TODO Auto-generated method stub
         
         Calculater c1 = new Calculater();
-        System.out.println(c1.PI);//인스턴스를 이용해 PI 접근
+        c1.setOprands(10,20);
+        c1.sum();
         
         Calculater c2 = new Calculater();
-        System.out.println(c2.PI);
+        c2.setOprands(20,40);
+        c2.sum();
         
         
-        System.out.println(Calculater.PI);//클래스를 통해서 PI 접근
+        Calculater.base = 10;//클래스 변수의 값을 10으로 설정
         
+        c1.sum();
+        
+        c2.sum();
         
         
         

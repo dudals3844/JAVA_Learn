@@ -4,6 +4,7 @@ class Calculater {
     
     
     static double PI = 3.14;
+    static int base = 0;//믈래스 변수 추가
     int left, right;
     
     public void setOprands(int left , int right){
@@ -12,11 +13,11 @@ class Calculater {
     }
     
     public void sum(){
-        System.out.println(this.left + this.right);
+        System.out.println(this.left + this.right+base);
     }
     
     public void avg(){
-        System.out.println((this.left+this.right)/2);
+        System.out.println((this.left + this.right + base)/2);
     }
     
     
