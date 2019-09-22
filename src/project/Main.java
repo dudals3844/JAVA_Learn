@@ -9,21 +9,30 @@ public class Main {
     /**
      * @param args
      */
+    public static void avg(int left, int  right){
+        System.out.println((left+right)/2);
+    }
    
+    public static void sum(int left, int right){
+        System.out.println(left+right);
+    }
+    
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        String[] temp = {"aa","bb","cc"};
-        for(int i = 0; i < temp.length; i++){
-            System.out.println(temp[i]);
-        }
+        int left, right;
         
-        System.out.println("--------SAME SYNTAX---------");
+        left =10;
+        right = 20;
         
-        for(String el : temp){
-            System.out.println(el);//배열 하나를 출력하고 다시 FOR문으로 반복한다.
-        }
+        sum(left,right);
+        avg(left,right);
         
+        left = 20;
+        right = 40;
+        
+        sum(left,right);
+        avg(left,right);
     }
 
 }
