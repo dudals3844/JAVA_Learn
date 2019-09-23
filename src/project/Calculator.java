@@ -24,8 +24,8 @@ class Calculator {
         System.out.println(this.left + this.right);
     }
     
-    public void avg(){
-        System.out.println((this.left + this.right)/2);
+    public int avg(){
+        return ((this.left + this.right) / 2);
     }
     
     
