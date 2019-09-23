@@ -11,7 +11,7 @@ class C {
     void m(){
         int v  = 20;
         //v = this.v;
-        System.out.println(v);
+        System.out.println(this.v);
     }
 }
 
