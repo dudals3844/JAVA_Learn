@@ -9,12 +9,14 @@ public class Main{
     /**
      * @param args
      */
-    public Main(){}
-    public Main (int param){}
+   
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Main m  = new Main();
-        //public Main (int param){}가 만들어져 자동으로 생성자가 만들어지지 않는다
+        SubstractionableCalculator c1 = new SubstractionableCalculator(10,20);
+        //c1.setOprands가 필요 없어졌다 public SubstractionableCalculator(int left, int right)에서 생성자로 left랑 right를 받았기 때문이다.
+        c1.avg();
+        c1.sum();
+        c1.substract();
     }
 }
