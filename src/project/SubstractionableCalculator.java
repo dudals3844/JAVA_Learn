@@ -3,8 +3,7 @@ package project;
 class SubstractionableCalculator extends Calculator {
     
     public SubstractionableCalculator(int left, int right){
-        this.left = left;
-        this.right = right;
+        super(left,right);//super는 상위 클래스를 가르키는 키워드이다.
     }
     
     public void substract(){
