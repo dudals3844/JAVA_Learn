@@ -9,7 +9,7 @@ class SubstractionableCalculator extends Calculator {
     
     //overriding
     public int avg() {
-        return (this.left + this.right)/2;
+        return super.avg();
     }//error syntax
     // 메소드의 이름
     // 메소드 매개변수의 숫자와 데이터 타입 그리고 순서
