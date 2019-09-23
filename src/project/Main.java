@@ -14,8 +14,10 @@ public class Main{
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         
-        Calculator c1 = new Calculator(10,20);
+        SubstractionableCalculator c1 = new SubstractionableCalculator();
+        c1.setOprands(10,20);
         c1.avg();
         c1.sum();
+        c1.substract();
     }
 }
