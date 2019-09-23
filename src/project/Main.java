@@ -13,13 +13,7 @@ public class Main{
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        DivisionableCalculator c1  = new DivisionableCalculator();
-        //상속에 상속을 했다
-        
-        c1.setOprands(10, 20);
-        c1.sum();
-        c1.avg();
-        c1.multiplication();
-        c1.division();
+        Main m  = new Main();
+        //자동으로 생성자를 만들어준다. 
     }
 }
