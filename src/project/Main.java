@@ -9,6 +9,7 @@ public class Main{
     /**
      * @param args
      */
+    public Main(){}
     public Main (int param){}
     
     public static void main(String[] args) {
