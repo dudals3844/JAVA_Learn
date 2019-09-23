@@ -5,18 +5,18 @@ class Calculator {
     
     
     int left, right;
-    /*
+    
     public Calculator(int left, int right){//생산자
         this.left = left;
         this.right = right;
     }
-    */
     
+    /*
     public void setOprands(int left , int right){
         this.left = left;
         this.right = right;
     }
-    
+    */
     
     public void sum(){
         System.out.println(this.left + this.right);
