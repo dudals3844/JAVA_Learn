@@ -1,6 +1,6 @@
 package project;// 파일 생성해도 package해줘야 된다 안하면 경로 못찾음
 
-class Calculator {
+public class Calculator {//외부 패키지에서 접근 가능하게 public으로 변경
     
     //public Calculator(){}//plus default constructor
     
