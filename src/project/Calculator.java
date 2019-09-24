@@ -1,6 +1,6 @@
 package project;// 파일 생성해도 package해줘야 된다 안하면 경로 못찾음
 
-abstract class Calculator {//외부 패키지에서 접근 가능하게 public으로 변경
+class Calculator {//외부 패키지에서 접근 가능하게 public으로 변경
     
     //public Calculator(){}//plus default constructor
     
@@ -17,7 +17,7 @@ abstract class Calculator {//외부 패키지에서 접근 가능하게 public�
     // public void setOprands(int[] oprands){
     //     this.oprands = oprands;
     // }
-    
+    static final double PI = 3.14;//final은 변하지 않는다
     int left, right;
     
     
@@ -28,12 +28,7 @@ abstract class Calculator {//외부 패키지에서 접근 가능하게 public�
     }
     
     
-    public abstract void sum();
-    public abstract void avg();
-    public void run(){
-        sum();
-        avg();
-    }
+    
     // private int _sum(){
     //     return this.left + this.right;
     // }
@@ -50,19 +45,3 @@ abstract class Calculator {//외부 패키지에서 접근 가능하게 public�
 }
 
 
-class CalculatorDecoPlus extends Calculator {
-    public void sum(){
-        System.out.println("+ sum :"+(this.left+this.right));
-    }
-    public void avg(){
-        System.out.println("+ avg :"+(this.left+this.right)/2);
-    }
-} 
-class CalculatorDecoMinus extends Calculator {
-    public void sum(){
-        System.out.println("- sum :"+(this.left+this.right));
-    }
-    public void avg(){
-        System.out.println("- avg :"+(this.left+this.right)/2);
-    }
-} 
