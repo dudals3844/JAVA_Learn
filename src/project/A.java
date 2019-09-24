@@ -1,16 +1,12 @@
 package project;
 
-class A {
+abstract class A {
     
-    public String y(){
-        return "public void y()";
+    public abstract int b(){
+        
     }
     
-    private String z(){
-        return "private voud z()";
-    }
-    
-    public String x(){
-        return z();
+    public void d(){
+        //추상클래스 안에는 추상 메소드가 아닌 메소드도 들어갛 수 있다
     }
 }
