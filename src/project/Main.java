@@ -13,7 +13,8 @@ public class Main{
     
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Calculator c1 = new Calculator();
-        System.out.println(c1.PI);
+        Calculator c = new Calculator();
+        c.setOprands(10,20,30);
+        System.out.println(c.sum() + c.avg());
     }
 }

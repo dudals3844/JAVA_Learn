@@ -1,8 +1,8 @@
-package project;
+// package project;
 
-final class A {
+// final class A {
     
-    final void b(){}
+//     final void b(){}
     
     
-}
+// }

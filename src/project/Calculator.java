@@ -1,6 +1,9 @@
 package project;// 파일 생성해도 package해줘야 된다 안하면 경로 못찾음
 
-class Calculator {//외부 패키지에서 접근 가능하게 public으로 변경
+
+
+
+class Calculator implements Calculatable{//interface구현으로 무조건 public으로 변경
     
     //public Calculator(){}//plus default constructor
     
@@ -17,14 +20,22 @@ class Calculator {//외부 패키지에서 접근 가능하게 public으로 변�
     // public void setOprands(int[] oprands){
     //     this.oprands = oprands;
     // }
-    static final double PI = 3.14;//final은 변하지 않는다
-    int left, right;
+    int first, second, third;
     
     
     
-    public void setOprands(int left, int right){
-        this.left = left;
-        this.right = right;
+    public void setOprands(int first, int second, int third){
+        this.first = first;
+        this.second = second;
+        this.third = third;
+    }
+    
+    public int sum(){
+        return this.first + this.second + this.third;
+    }
+    
+    public int avg(){
+        return (this.first + this.second + this.third) / 3;
     }
     
     
