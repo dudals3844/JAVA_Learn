@@ -14,7 +14,13 @@ public class Main{
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         
-        B obj = new B();
-        System.out.println(obj.b());
+        CalculatorDecoPlus c1 = new CalculatorDecoPlus();
+        c1.setOprands(10,20);
+        c1.run();
+        
+        
+        CalculatorDecoMinus c2 = new CalculatorDecoMinus();
+        c2.setOprands(10,20);
+        c2.run();
     }
 }
