@@ -5,6 +5,7 @@ class Calculator {
     //public Calculator(){}//plus default constructor
     
     int left, right;
+    int third = 0;
     
     
     /*
@@ -15,17 +16,25 @@ class Calculator {
     */
     
     public void setOprands(int left , int right){
+        System.out.println("setOprands(int left , int right)");
         this.left = left;
         this.right = right;
     }
     
-    
-    public void sum(){
-        System.out.println(this.left + this.right);
+    public void setOprands(int left, int right, int third){
+        System.out.println("setOprands(int left , int right, int third)");
+        this.left = left;
+        this.right = right;
+        this.third = third;
     }
     
-    public int avg(){
-        return ((this.left + this.right) / 2);
+    
+    public void sum(){
+        System.out.println(this.left+this.right+this.third);
+    }
+    
+    public void avg(){
+        System.out.println((this.left+this.right+this.third)/3);
     }
     
     
