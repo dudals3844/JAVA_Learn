@@ -4,7 +4,7 @@ public class Calculator {//외부 패키지에서 접근 가능하게 public으�
     
     //public Calculator(){}//plus default constructor
     
-    int[] oprands;
+    //int[] oprands;
     
     
     /*
@@ -14,28 +14,30 @@ public class Calculator {//외부 패키지에서 접근 가능하게 public으�
     }
     */
     
-    public void setOprands(int[] oprands){
-        this.oprands = oprands;
+    // public void setOprands(int[] oprands){
+    //     this.oprands = oprands;
+    // }
+    
+    private int left, right;
+    
+    
+    
+    public void setOprands(int left, int right){
+        this.left = left;
+        this.right = right;
     }
     
-    
-    
-    public void sum(){
-        int total = 0;
-        for(int value: this.oprands){
-            total += value;
-        }
-        System.out.println(total);
+    private int _sum(){
+        return this.left + this.right;
     }
     
-    public void avg(){
-        int total = 0;
-        for(int value: this.oprands){
-            total += value;
-        }
-        System.out.println(total/this.oprands.length);
+    public void sumDecoPlus(){
+        System.out.println("++++++"+_sum()+"+++++++++");
     }
     
+    public void sumDecoMinus(){
+        System.out.println("---------"+_sum()+"--------");
+    }
     
 
 }
