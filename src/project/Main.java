@@ -14,6 +14,7 @@ public class Main{
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         
-        A obj = new A();//error 추상이라 만들어 지지 않았는데 인스턴스 생성하라고 하니까 에러남
+        B obj = new B();
+        System.out.println(obj.b());
     }
 }
