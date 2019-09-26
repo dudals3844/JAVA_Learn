@@ -1,12 +1,12 @@
-package project;
+// package project;
 
-class A {
+// class A {
     
-    public String x(){
-        return "A.x";
-    }
-    
-    
+//     public String x(){
+//         return "A.x";
+//     }
     
     
-}
+    
+    
+// }

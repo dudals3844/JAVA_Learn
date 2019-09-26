@@ -3,7 +3,7 @@ package project;// 파일 생성해도 package해줘야 된다 안하면 경로 
 
 
 
-class Calculator implements Calculatable{//interface구현으로 무조건 public으로 변경
+abstract class Calculator {//interface구현으로 무조건 public으로 변경
     
     //public Calculator(){}//plus default constructor
     
@@ -20,23 +20,27 @@ class Calculator implements Calculatable{//interface구현으로 무조건 publi
     // public void setOprands(int[] oprands){
     //     this.oprands = oprands;
     // }
-    int first, second, third;
+    int left, right;
     
+    public void setOprands(int left, int right){
+        this.left = left;
+        this.right = right;
+    } 
     
-    
-    public void setOprands(int first, int second, int third){
-        this.first = first;
-        this.second = second;
-        this.third = third;
+    int _sum(){
+        return this.left + this.right;
     }
     
-    public int sum(){
-        return this.first + this.second + this.third;
+    public abstract void sum();
+    
+    public abstract void avg();
+    
+    public void run(){
+        sum();
+        avg();
     }
     
-    public int avg(){
-        return (this.first + this.second + this.third) / 3;
-    }
+    
     
     
     
