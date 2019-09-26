@@ -5,6 +5,13 @@ import java.util.HashMap;
 
 enum Fruit {
     APPLE, PEACH, BANANA;
+    Fruit(){
+        System.out.println("Call Constructor "+this);
+    }
+    
+    // public Fruit(){//enum은 private만 지원해서 오류가 난다.
+    //     System.out.println("Call Constructor "+this);
+    // }
 }
 
 
