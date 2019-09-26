@@ -1,8 +1,12 @@
-// package project;
+package project;
 
-// final class A {
+class A {
     
-//     final void b(){}
+    public String x(){
+        return "x";
+    }
     
     
-// }
+    
+    
+}

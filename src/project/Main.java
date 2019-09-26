@@ -11,10 +11,9 @@ public class Main{
      */
    
     
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        O o = new O();
-        o.a(1);
-        o.a("one");
+    public static void main(String[] args){
+        A obj = new B();
+        System.out.println(obj.x());
+        //obj.y(); 이 코드는 실행되지 않는다.
     }
 }
