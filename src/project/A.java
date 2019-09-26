@@ -1,12 +1,8 @@
-// package project;
+package project;
 
-// class A {
-    
-//     public String x(){
-//         return "A.x";
-//     }
-    
-    
-    
-    
-// }
+class A {
+    public int id;
+    A(int id){
+        this.id = id;
+    }
+}
