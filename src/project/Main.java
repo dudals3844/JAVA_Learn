@@ -9,23 +9,41 @@ public class Main{
     /**
      * @param args
      */
+    static void _value(int b){
+        b = 2;
+    }
+    
+    
     public static void runValue(){
         int a = 1;
-        int b = a;
-        b = 2;
+        _value(a);
         System.out.println("runValue, "+a);
     }
     
-    public static void runReference(){
+    static void _reference1(A b){
+        b = new A(2);
+    }
+    
+    public static void runReference1(){
         A a = new A(1);
-        A b = a;
+        _reference1(a);
+        System.out.println("runReference1, "+a.id);
+    }
+    
+    static void _reference2(A b){
         b.id = 2;
-        System.out.println("runReference, "+a.id);//b를 참조해서 a도 변경이 되었다.
+    }
+    
+    public static void runReference2(){
+        A a = new A(1);
+        _reference2(a);
+        System.out.println("runReference2, "+a.id);
     }
     
     
     public static void main(String[] args) {
         runValue();
-        runReference();
+        runReference1();
+        runReference2();
     }
 }
