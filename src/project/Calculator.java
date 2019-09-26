@@ -3,7 +3,7 @@ package project;// 파일 생성해도 package해줘야 된다 안하면 경로 
 
 
 
-abstract class Calculator {//interface구현으로 무조건 public으로 변경
+class Calculator {//interface구현으로 무조건 public으로 변경
     
     //public Calculator(){}//plus default constructor
     
@@ -27,17 +27,16 @@ abstract class Calculator {//interface구현으로 무조건 public으로 변경
         this.right = right;
     } 
     
-    int _sum(){
-        return this.left + this.right;
+    public void sum(){
+        System.out.println(this.left+this.right);
+    }
+      
+    public void avg(){
+        System.out.println((this.left+this.right)/2);
     }
     
-    public abstract void sum();
-    
-    public abstract void avg();
-    
-    public void run(){
-        sum();
-        avg();
+    public String toString(){
+        return "left : " + this.left + ", right : "+ this.right;
     }
     
     

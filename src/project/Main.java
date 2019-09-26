@@ -10,19 +10,9 @@ public class Main{
      * @param args
      */
     public static void main(String[] args){
-        D obj = new D();
-        I2 objI2 = new D();
-        I3 objI3 = new D();
-        
-        obj.A();
-        obj.B();
-        
-        objI2.A();
-        System.out.println(objI2.A());
-        //objI2.B());// error
-        
-        //objI3.A();// error
-        objI3.B();
-        System.out.println(objI3.B());
+        Calculator c1 = new Calculator();
+        c1.setOprands(10,20);
+        System.out.println(c1);
+        System.out.println(c1.toString());
     }
 }
