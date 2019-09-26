@@ -3,17 +3,22 @@ package project;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+enum Fruit {
+    APPLE, PEACH, BANANA;
+}
 
+
+enum Company{
+    GOOGLE, APPLE, ORACLE;
+}
 
 public class Main{
     /**
      * @param args
      */
-    private final static int APPLE = 1;
-    private final static int PEACH = 2;
-    private final static int BANANA = 3;
+    
     public static void main(String[] args) {
-        int type = APPLE;
+        Fruit type = Fruit.APPLE;
         switch(type){
             case APPLE:
                 System.out.println(57+" kcal");
