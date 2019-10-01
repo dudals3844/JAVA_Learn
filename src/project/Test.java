@@ -1,11 +1,12 @@
 package project;
 
-public class Test extends Thread {
+public class Test implements Runnable {
     int seq;
     public Test(int seq){
         this.seq = seq;
     }
 
+    @Override
     public void run() {
         System.out.println(this.seq+"Thread start");
         try{

@@ -23,7 +23,7 @@ public class Main{
         //wait main util all thread end
         ArrayList<Thread> threads = new ArrayList<Thread>();
         for (int i = 0; i < 10; i++) {
-            Thread t = new Test(i);
+            Thread t = new Thread(new Test(i));
             t.start();
             threads.add(t);
         }
