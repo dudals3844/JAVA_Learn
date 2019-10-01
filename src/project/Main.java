@@ -9,24 +9,33 @@ public class Main{
     /**
      * @param args
      */
+
     
     
     public static void main(String[] args) {
-        SingleThread ct = new SingleThread();
-        Thread t = new Thread(ct,"first");
-        t.start();
+        // for (int i = 0; i < 10; i++) {
+        //     Thread t = new Test(i);
+        //     t.start();
+        // }
+
+        // System.out.println("main end.");
         
-        // SingleThread ct1 = new SingleThread();
-        // Thread t1 = new Thread(ct1,"first");
-        // t1.start();
-        
-        // SingleThread ct2 = new SingleThread();
-        // Thread t2 = new Thread(ct2,"first");
-        // t2.start();
-        
-        
-        System.out.println("main Thread exit");
-        
-        //System.exit(0);
+        //wait main util all thread end
+        ArrayList<Thread> threads = new ArrayList<Thread>();
+        for (int i = 0; i < 10; i++) {
+            Thread t = new Test(i);
+            t.start();
+            threads.add(t);
+        }
+
+        for (int i = 0; i < threads.size(); i++) {
+            Thread t = threads.get(i);
+            try {
+                t.join();//쓰레드가 종료될때 까지 대기
+            } catch (Exception e) {
+                //TODO: handle exception
+            }
+        }
+        System.out.println("main end");
     }
 }
